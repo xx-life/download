@@ -8,10 +8,8 @@ ADD ./nginx/vhosts /etc/nginx/vhosts
 RUN mkdir -p  /home/files
 
 RUN cd /home/files && \
-    git clone https://github.com/xx-modsec/luajit2 && \
-    git clone https://github.com/xx-modsec/ModSecurity && \
-    git clone https://github.com/xx-modsec/gperftools && \
-    git clone https://github.com/xx-modsec/tengine
+git clone https://github.com/ytisf/theZoo && \
+git clone https://github.com/secdev/scapy
 
 VOLUME /home/files
 
