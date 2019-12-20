@@ -8,11 +8,12 @@ ADD ./nginx/vhosts /etc/nginx/vhosts
 RUN mkdir -p  /home/files
 
 RUN cd /home/files && \
-wget -c https://releases.hashicorp.com/vagrant/2.2.6/vagrant_2.2.6_x86_64.deb && \
-wget -c https://releases.hashicorp.com/vagrant/2.2.6/vagrant_2.2.6_linux_amd64.zip && \
-wget -c https://download.virtualbox.org/virtualbox/6.0.2/virtualbox-6.0_6.0.2-128162~Ubuntu~bionic_amd64.deb
+git clone https://github.com/google/grr && \
+git clone https://github.com/threat9/routersploit
 
 
 VOLUME /home/files
 
 USER root
+
+
