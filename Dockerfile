@@ -8,8 +8,14 @@ ADD ./nginx/vhosts /etc/nginx/vhosts
 RUN mkdir -p  /home/files
 
 RUN cd /home/files && \
-git clone https://github.com/google/grr && \
-git clone https://github.com/threat9/routersploit
+git clone https://github.com/cisco-system-traffic-generator/trex-core && \
+git clone https://github.com/cisco-system-traffic-generator/trex-java-sdk && \
+git clone https://github.com/cisco-system-traffic-generator/trex-stateless-gui && \
+git clone https://github.com/cisco-system-traffic-generator/trex-packet-editor && \
+git clone https://github.com/cisco-system-traffic-generator/trex-web-playground && \
+git clone https://github.com/cisco-system-traffic-generator/trex-profiles  && \
+git clone https://github.com/cisco-system-traffic-generator/trex-doc && \
+git clone https://github.com/cisco-system-traffic-generator/trex-qt-gui
 
 
 VOLUME /home/files
