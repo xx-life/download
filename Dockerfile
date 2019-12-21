@@ -8,8 +8,12 @@ ADD ./nginx/vhosts /etc/nginx/vhosts
 RUN mkdir -p  /home/files
 
 RUN cd /home/files && \
-git clone https://github.com/openwrt/openwrt && \
-git clone https://github.com/coolsnowwolf/lede
+git clone https://github.com/shadowsocks/shadowsocks-libev && \
+git clone https://github.com/shadowsocks/openwrt-shadowsocks && \
+git clone https://github.com/openwrt/luci && \
+git clone https://github.com/softwaredownload/openwrt-fanqiang && \
+git clone https://github.com/miao1007/Openwrt-NetKeeper && \
+git clone https://github.com/shadowsocksr-backup/shadowsocks-rss
 
 VOLUME /home/files
 
