@@ -8,8 +8,7 @@ ADD ./nginx/vhosts /etc/nginx/vhosts
 RUN mkdir -p  /home/files
 
 RUN cd /home/files && \
-wget https://static.rust-lang.org/dist/2019-11-07/rust-std-1.39.0-x86_64-unknown-linux-gnu.tar.gz && \
-git clone https://github.com/ntop/PF_RING
+wget https://jaist.dl.sourceforge.net/project/os-sim/alienvault-ossim.tar.gz 
 
 VOLUME /home/files
 
