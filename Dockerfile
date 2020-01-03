@@ -8,7 +8,7 @@ ADD ./nginx/vhosts /etc/nginx/vhosts
 RUN mkdir -p  /home/files
 
 RUN cd /home/files && \
-wget https://jaist.dl.sourceforge.net/project/os-sim/alienvault-ossim.tar.gz 
+git clone https://github.com/bobey/geoip2-geolite2-composer
 
 VOLUME /home/files
 
