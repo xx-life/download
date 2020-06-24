@@ -1,5 +1,5 @@
-FROM registry.cn-hangzhou.aliyuncs.com/xxzhang/tengine
-
+# FROM registry.cn-hangzhou.aliyuncs.com/xxzhang/tengine
+FROM axizdkr/tengine
 RUN apk add --no-cache --virtual .gettext git
 
 ADD ./nginx/nginx.conf /etc/nginx/nginx.conf
