@@ -12,6 +12,9 @@ RUN cd /home/files && \
 
 RUN cd /home/files && \
 	git clone https://github.com/TheKingOfDuck/fuzzDicts
+	
+RUN cd /home/files && \
+	git clone https://github.com/bloodzer0/ossa
 
 VOLUME /home/files
 
