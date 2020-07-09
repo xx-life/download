@@ -8,7 +8,10 @@ ADD ./nginx/vhosts /etc/nginx/vhosts
 RUN mkdir -p  /home/files
 
 RUN cd /home/files && \
-wget -c https://vagrantcloud.com/generic/boxes/debian9/versions/3.0.10/providers/virtualbox.box
+	git clone https://github.com/StrangerealIntel/CyberThreatIntel 
+
+RUN cd /home/files && \
+	git clone https://github.com/TheKingOfDuck/fuzzDicts
 
 VOLUME /home/files
 
