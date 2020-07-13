@@ -16,6 +16,9 @@ RUN cd /home/files && \
 RUN cd /home/files && \
 	git clone https://github.com/bloodzer0/ossa
 
+RUN cd /home/files && \
+	git clone https://github.com/Wh0ale/SRC-experience
+
 VOLUME /home/files
 
 USER root
