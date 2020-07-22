@@ -8,16 +8,8 @@ ADD ./nginx/vhosts /etc/nginx/vhosts
 RUN mkdir -p  /home/files
 
 RUN cd /home/files && \
-	git clone https://github.com/StrangerealIntel/CyberThreatIntel 
+    wget -c https://archive.cloudera.com/cm5/cm/5/cloudera-manager-centos7-cm5.14.1_x86_64.tar.gz
 
-RUN cd /home/files && \
-	git clone https://github.com/TheKingOfDuck/fuzzDicts
-	
-RUN cd /home/files && \
-	git clone https://github.com/bloodzer0/ossa
-
-RUN cd /home/files && \
-	git clone https://github.com/Wh0ale/SRC-experience
 
 VOLUME /home/files
 
