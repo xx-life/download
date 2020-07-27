@@ -8,8 +8,8 @@ ADD ./nginx/vhosts /etc/nginx/vhosts
 RUN mkdir -p  /home/files
 
 RUN cd /home/files && \
-    wget -c https://archive.cloudera.com/cm5/cm/5/cloudera-manager-centos7-cm5.14.1_x86_64.tar.gz
-
+    wget -c https://kumisystems.dl.sourceforge.net/project/hackxor/hackxor12.7z && \
+    wget -c http://files.nyi.pfsense.org/mirror/downloads/pfSense-CE-2.4.5-RELEASE-amd64.iso.gz
 
 VOLUME /home/files
 
