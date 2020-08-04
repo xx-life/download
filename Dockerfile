@@ -8,9 +8,8 @@ ADD ./nginx/vhosts /etc/nginx/vhosts
 RUN mkdir -p  /home/files
 
 RUN cd /home/files && \
-    wget -c https://kumisystems.dl.sourceforge.net/project/hackxor/hackxor12.7z && \
-    wget -c http://files.nyi.pfsense.org/mirror/downloads/pfSense-CE-2.4.5-RELEASE-amd64.iso.gz
-
+    wget -c https://sourceforge.mirrorservice.org/m/me/metasploitable/Metasploitable2/metasploitable-linux-2.0.0.zip
+    
 VOLUME /home/files
 
 USER root
